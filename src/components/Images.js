@@ -2,8 +2,6 @@ import { useContext } from "react";
 import { ImageContext } from "../App";
 import Image from "./Image";
 import Skeleton from "./Skeleton";
-
-
 const Images = () =>{
 
     const { response, isLoading, searchImage} = useContext(ImageContext);
@@ -16,5 +14,4 @@ const Images = () =>{
         </>
     )
 }
-
 export default Images;

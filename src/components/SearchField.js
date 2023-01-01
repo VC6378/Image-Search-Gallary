@@ -11,14 +11,14 @@ const SearchField = () =>{
     }
 
     const handleButtonSearch = () =>{
-        fetchData(`search/photos?page=1&query=${searchValue}&per_page=12&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
+        fetchData(`search/photos?page=2&query=${searchValue}&per_page=12&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
         setSearchValue("");
         setSearchImage(searchValue);
     }
 
     const handleEnterSearch = e =>{
         if(e.key === 'Enter'){
-            fetchData(`search/photos?page=1&query=${searchValue}&per_page=12&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
+            fetchData(`search/photos?page=2&query=${searchValue}&per_page=12&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
             setSearchValue("");
             setSearchImage(searchValue);
         }

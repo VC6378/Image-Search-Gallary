@@ -1,5 +1,4 @@
 
-
 function Image({ data }) {
   return (
     <a href={data.urls.regular} target="_blank" rel="noreferrer">
@@ -8,4 +7,4 @@ function Image({ data }) {
   )
 }
 
-export default Image
+export default Image;
